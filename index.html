@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <title>Test Task</title>
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__wrapper">
+                <div class="header__wrapper__logo">
+                    <a href="/"><img src="/img/logo.png" alt="Logo"></a>
+                </div>
+                <div class="header__wrapper-mobile">
+                    <a class="header__wrapper-mobile__link" href="#"><img src="/img/phone.png" class="header__wrapper-mobile__icon" alt="icon"> (067) 000 00 01</a>
+                </div>
+                <div class="nav-wrapper">
+                    <nav class="nav">
+                        <ul class="nav__topmenu">
+                            <li class="nav__topmenu__item"><a class="nav__topmenu__link" href="">Пункт меню</a></li>
+                            <li class="nav__topmenu__item"><a href="#" class="nav__topmenu__link nav__topmenu__link__active">Пункт меню</a>
+                              <ul class="nav__submenu">
+                                <li class="nav__submenu__item"><a class="nav__submenu__link" href="#"><i class="nav__submenu__rsaquo">&rsaquo;</i>Пункт меню #1</a></li>
+                                <li class="nav__submenu__item"><a class="nav__submenu__link" href="#"><i class="nav__submenu__rsaquo">&rsaquo;</i>Пункт #2</a></li>
+                                <li class="nav__submenu__item"><a class="nav__submenu__link" href=""><i class="nav__submenu__rsaquo">&rsaquo;</i>Подпункт #3</a></li>
+                                <li class="nav__submenu__item"><a class="nav__submenu__link" href="#"><i class="nav__submenu__rsaquo">&rsaquo;</i>Меню #4</a></li>
+                              </ul>
+                            </li>
+                            <li class="nav__topmenu__item"><a class="nav__topmenu__link" href="#">Пункт меню</a></li>
+                            <li class="nav__topmenu__item"><a class="nav__topmenu__link" href="#">Пункт меню</a></li>
+                            <li class="nav__topmenu__item"><a class="nav__topmenu__link" href="#">Пункт меню</a></li>
+                          </ul>
+                    </nav>
+                    <nav class="nav-mobile">
+                        <a href="#" onclick="openNav()">
+                            <img src="/img/burger.png" alt="Mobilemenu">
+                        </a>
+                        <div id="nav-mobile" class="nav-mobile-overlay">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <div class="nav-mobile-overlay-content">
+                                <a href="#">Пункт меню #1</a>
+                                <a href="#">Пункт меню #2</a>
+                                <a href="#">Пункт меню #3</a>
+                                <a href="#">Пункт меню #4</a>
+                                <a href="#">Пункт меню #5</a>
+                            </div>
+                            
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>    
+        
+    </header>
+    <main class="main">
+        <div class="wraps">
+            <div class="wrapper">
+                <div class="main-wrapper-top">
+                    <div class="main-text">
+                        <div class="main-text-left">
+                            <h1 class="main-text__caption">
+                                IT-школа <a class="main-text__caption__link" href="#">СМАРТ</a> 
+                            </h1>
+                            <p class="main-text__caption__text1">— Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error at temporibus obcaecati iste sint.</p>
+                            <p class="main-text__caption__text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, reiciendis? Esse velit soluta maxime deleniti illum totam neque voluptas magni autem, tenetur voluptatum at fuga, commodi incidunt cumque perferendis dolorem!</p>
+                        </div>
+                        <div class="main-text__btn-write">
+                            <input type="button" id="myBtn" value="Записаться">
+                                <div id="myModal" class="modal">
+                                    <div class="modal-wrapper">
+                                        <div class="modal-content">
+                                            <span class="close">&times;</span>
+                                            <div class="wrapper-form">
+                                                <div class="wrapper-form-caption">
+                                                    <img src="/img/modal_icon_title.png" alt="icon">
+                                                    <h4>Sign up now</h4>
+                                                </div>
+                                                    <form class="contact-form" method="POST">
+                                                        <div class="contact-form-field-block">
+                                                            <input id="name" class="field" name="name" required type="text"
+                                                                placeholder="Ваше имя*" />
+                                                        </div>
+                                                        <div class="contact-form-field-block">
+                                                            <input id="email" class="field" name="email" required type="text"
+                                                                placeholder="Ваш e-mail*" required />
+                                                        </div>
+                                                        <div class="contact-form-field-block">
+                                                            <input id="phone" class="field" name="phone" required type="text"
+                                                                placeholder="Номер телефона*" required />
+                                                        </div>
+                                                        <p class="contact-form-text"><i class="contact-form-text-star">*</i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi enim reiciendis</p>
+                                                        
+                                                    </form>
+                                                    <div class="wrapper-form-btn">
+                                                        <button class="wrapper-form-btn__mybutton">Записаться</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    
+                                </div>
+                        </div>
+                    </div>
+                    <div class="main-wrapper-top__img">
+                        <img src="/img/image_1.png" alt="Boy">
+                    </div>
+                </div>
+                <div class="main-wrapper-midl">
+                    <div class="main-wrapper-midl__img">
+                        <img src="/img/image_2.png" alt="Girl">
+                    </div>
+                    <div class="main-wrapper-midl__tabs">
+                        <input type = "radio" id = "tab1" name = "tabs" checked>
+                        <label for = "tab1" class="main-wrapper-midl__tabs__label">Tab #1</label>
+                        <input type = "radio" id = "tab2" name = "tabs">
+                        <label for = "tab2" class="main-wrapper-midl__tabs__label">Tab #2</label>
+                        <input type = "radio" id = "tab3" name = "tabs">
+                        <label for = "tab3" class="main-wrapper-midl__tabs__label">Tab #3</label>
+                        <div id="content1">
+                            <h2 class="content1-caption">This caption #1</h2>
+                            <p class="content1-text"> <span class="content1-text-line"></span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam libero voluptates nulla at quod nisi, voluptatum veniam quo autem odit hic reprehenderit fuga. Sed aliquam dolore reprehenderit autem delectus consequatur!</p>
+                            <h5 class="content1-list-caption">List caption:</h5>
+                            <ul class="content1-list">
+                                <li class="content1-list__item"><i class="check"></i>List #1</li>
+                                <li class="content1-list__item"><i class="check"></i>List #2</li>
+                                <li class="content1-list__item"><i class="check"></i>List #3</li>
+                                <li class="content1-list__item"><i class="check"></i>List #4</li>
+                            </ul>
+                        </div>
+                        <div id="content2">
+                            <h2 class="content2-caption">This caption #2</h2>
+                            <p class="content2-text"> <span class="content1-text-line"></span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ad tempora, alias nobis quis ea doloremque, libero ex esse illum, quod optio quisquam quidem cum? Dicta distinctio veniam dolorum suscipit.
+                            Praesentium laudantium maxime rerum at harum reprehenderit labore error doloremque, aliquam omnis autem laborum ex illo mollitia eaque velit dolores quas, optio, iste exercitationem numquam sapiente similique officiis minus. Optio?
+                            </p>
+                            <h5 class="content1-list-caption">List caption:</h5>
+                            <ul class="content1-list">
+                                <li class="content1-list__item"><i class="check"></i>List #1</li>
+                                <li class="content1-list__item"><i class="check"></i>List #2</li>
+                                <li class="content1-list__item"><i class="check"></i>List #3</li>
+                                <li class="content1-list__item"><i class="check"></i>List #4</li>
+                            </ul>
+                        </div>
+                        <div id="content3">
+                            <h2 class="content3-caption">This caption #3</h2>
+                            <p class="content3-text"> <span class="content1-text-line"></span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam libero voluptates nulla at quod nisi.</p>
+                            <h5 class="content1-list-caption">List caption:</h5>
+                            <ul class="content1-list">
+                                <li class="content1-list__item"><i class="check"></i>List #1</li>
+                                <li class="content1-list__item"><i class="check"></i>List #2</li>
+                                <li class="content1-list__item"><i class="check"></i>List #3</li>
+                                <li class="content1-list__item"><i class="check"></i>List #4</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-wrapper-bottom">
+            <div class="wrapper">
+                <div class="main-wrapper-bottom-img">
+                    <img class="main-wrapper-bottom-img__item" src="/img/img1.jpg" alt="School">
+                    <img class="main-wrapper-bottom-img__item" src="/img/img2.jpg" alt="School">
+                    <img class="main-wrapper-bottom-img__item" src="/img/img3.jpg" alt="School">
+                    <img class="main-wrapper-bottom-img__item" src="/img/img4.jpg" alt="School">
+                    <img class="main-wrapper-bottom-img__item" src="/img/img5.jpg" alt="School">
+                    <img class="main-wrapper-bottom-img__item" src="/img/img6.jpg" alt="School">
+                    <img class="main-wrapper-bottom-img__item" src="/img/img7.jpg" alt="School">
+                    <img class="main-wrapper-bottom-img__item" src="/img/img8.jpg" alt="School">
+                    <img class="main-wrapper-bottom-img__item" src="/img/img9.jpg" alt="School">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="wraps-f">
+                <div class="footer-wrapper-left">
+                    <div class="footer-wrapper-left-logo">
+                        <a href="#" class="footer-wrapper-left-logo__link"><img src="/img/logo.png" alt="Logo"></a>
+                    </div>
+                    <div class="footer-wrapper-left-img">
+                        <a href="#"><img src="img/twiter.png" alt="twiter"></a>
+                        <a href="#"><img src="img/facebook.png" alt="facebook"></a>
+                        <a href="#"><img src="img/telegram.png" alt="telegram"></a>
+                    </div>
+                </div>
+                <div class="footer-wrapper-right">
+                    <div class="footer-wrapper-right-contact">
+                        <h4 class="caption-h4">Contact</h4>
+                            <div class="contact">
+                                <div class="contact-tel">
+                                    <img src="img/phone.png" alt="Telefone">
+                                    <a href="#" class="tel__text">+38 (067) 000 00 01 </a>
+                                </div>
+                                <div class="contact-email">
+                                    <img src="img/email.png" alt="email">
+                                    <a href="#" class="email__text">e-mailmail@i.ua</a>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-wrapper-line">
+            <div class="footer-wrapper-copyright">
+                <p>Fomenko Ivan 2020</p>
+            </div>
+            
+        </div>
+    </footer>
+
+    <script src="/js/scrip.js"></script>
+</body>
+</html>
